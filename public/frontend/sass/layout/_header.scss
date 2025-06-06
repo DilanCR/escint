@@ -1,0 +1,498 @@
+/*-------------------------------------------------
+    [ ## Preloader ]
+*/
+.preloader {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $body--bg;
+}
+.loading {
+  position: fixed;
+  float: left;
+  top: 50%;
+  left: 50%;
+  height: 90px;
+  padding: 0px;
+  width: 90px;
+  transform: translate(-50%,-50%);
+  border-left: 2px solid $border--base;
+  border-bottom: 2px solid $border--base;
+  padding: 10px;
+  box-sizing: border-box;
+}
+@keyframes loading {
+  0% {
+    background: $base--color;
+  }
+  30% {
+    background: $base--color;
+  }
+  50% {
+    height: 70px;
+    margin-top: 0px;
+  }
+  80% {
+    background: $base--color;
+  }
+  100% {
+    background: $base--color;
+  }
+}
+.loading .loading-1 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.loading .loading-2 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.loading .loading-3 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+.loading .loading-4 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.loading .loading-5 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+.loading .loading-6 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.loading .loading-7 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+.loading .loading-8 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.loading .loading-9 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 2.25s;
+  animation-delay: 2.25s;
+}
+.loading .loading-10 {
+  height: 10px;
+  width: 20px;
+  background: $base--color;
+  display: inline-block;
+  margin-top: 60px;
+  -webkit-animation: loading 2.5s infinite;
+  -moz-animation: loading 2.5s infinite;
+  -o-animation: loading 2.5s infinite;
+  animation: loading 2.5s infinite;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+.custom-container{
+    max-width: 1700px;
+}
+.row>*{
+    position: relative;
+}
+@media (min-width: 1480px){
+    .col-xxl-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media (max-width: 575px){
+    .col-xs-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        @media only screen and (max-width: 400px) {
+            width: 100%;
+        }
+    }
+}
+.fs-10px{
+    font-size: 11px;
+}
+.op-6{
+    opacity: 0.6;
+}
+  
+/*-------------------------------------------------
+  [ ## Header ]
+*/
+.header-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: transparent;
+    &.two{
+      position: relative;
+      .header-bottom-area{
+        background-color: $section--bg;
+        .header-action{
+            a{
+                background-color: $body--bg;
+            }
+        }
+      }
+    }
+}
+.header {
+    background-color: transparent;
+    width: 100%;
+    z-index: 9;
+}
+.header-section.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: transparent;
+    margin-top: 0;
+    animation-fill-mode: initial;
+    .header-bottom-area{
+        background-color: $section--bg;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        .header-action{
+            a{
+                background-color: $body--bg;
+            }
+        }
+    }
+}
+.header-bottom-area{
+    position: relative;
+    background: transparent;
+    @media only screen and (max-width: 991px) {
+        padding-top: 20px;
+    }
+    .navbar-expand-lg{
+        background-color: transparent;
+        padding: 0 !important;
+    }
+    @media (max-width: 991px) {
+        .navbar-collapse{
+            background-color: $section--bg !important;
+            padding: 0 !important;
+        }
+        .navbar-collapse .main-menu {
+            padding: 15px 0;
+        }
+        .menu_has_children .sub-menu {
+            display: none !important;
+            li{
+                width: 100%;
+            }
+        }
+        .navbar-collapse .main-menu .menu_has_children.show .sub-menu ,
+        .navbar-collapse .main-menu .menu_has_children.show .sub-menu {
+            display: flex !important;
+            flex-wrap: wrap;
+        }
+    }
+    .navbar-collapse .main-menu li:last-child .sub-menu {
+        left: auto;
+        right: 0;
+    }
+    .navbar-collapse .main-menu{
+        align-items: center;
+        @media only screen and (max-width: 991px) {
+            align-items: flex-start;
+        }
+    }
+    .navbar-collapse .main-menu li {
+        position: relative;
+        padding-right: 40px;
+        @media only screen and (max-width:1199px) {
+            padding-right: 22px !important;
+        }
+        &:last-child{
+            padding-right: 0;
+            margin-right: 0;
+        }
+        &:hover .sub-menu{
+            transform: scaleY(1);
+        }
+    }
+    .navbar-collapse .main-menu li.menu_has_children {
+        position: relative;
+        i{
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    }
+    @media (max-width: 991px) {
+        .navbar-collapse .main-menu li.menu_has_children::before {
+            top: 12px;
+            right: 15px;
+        }
+    }
+    .navbar-collapse .main-menu li a {
+        position: relative;
+        padding: 30px 0;
+        font-weight: 500;
+        align-items: center;
+        color: $white;
+        display: inline-block;
+        font-size: 14px;
+        transition: all 0.5s;
+        z-index: 9;
+        &.active{
+            color: $base--color;
+        }
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-collapse .main-menu li a {
+            padding: 12px 15px !important;
+        }
+    }
+    .navbar-collapse .main-menu li .sub-menu {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        padding: 10px 5px;
+        width: 180px;
+        background-color: $section--bg;
+        border: 1px solid $border--base;
+        border-radius: 15px;
+        display: block;
+        transform: scaleY(0);
+        transform-origin: top left;
+        transition: all 0.5s;
+        z-index: 10;
+        @media only screen and (max-width: 991px) {
+            width: 180px;
+        }
+        li{
+            margin-right: 0;
+            padding-right: 0;
+            transition: all ease 0.5s;
+            position: relative;
+            z-index: 2;
+            &:last-child {
+                border-bottom: 0px solid;
+            }
+            &:hover{
+                a{
+                    color: $base--color;
+                }
+            }
+            a {
+                width: 100%;
+                font-size: 12px;
+                padding: 5px 15px;
+                display: block;
+                transition: all ease 0.3s;
+                &::before{
+                    display: none;
+                }
+                
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .navbar-collapse .main-menu li .sub-menu {
+            position: initial;
+            opacity: 1;
+            visibility: visible;
+            display: none;
+            -webkit-transition: none;
+            transition: none;
+        }
+    }
+    .navbar-collapse .main-menu li:last-child .sub-menu {
+        left: auto;
+        right: 0;
+    }
+}
+.site-logo{
+    max-width: 160px;
+    @media only screen and (max-width: 991px) {
+        max-width: 120px;
+    }
+}
+.header-action{
+    margin-left: 60px;
+    @media only screen and (max-width: 991px) {
+        margin-left: 12px;
+        padding-bottom: 30px;
+    }
+    a{
+      background: $section--bg;
+      padding: 13px 25px;
+    }
+}
+.language-select{
+    background: transparent;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    @media only screen and (max-width: 991px) {
+        margin-left: 12px;
+    }
+}
+.header-link{
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+    a{
+        color: $white;
+        i{
+            color: $base--color;
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    }
+    a+a{
+        margin-left: 20px;
+    }
+}
+.header-social{
+    li{
+      display: inline-block;
+      font-size: 13px;
+      color: $white;
+    }
+    li + li{
+      margin-left: 15px;
+    }
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background: $base--color;
+    color: $white;
+    font-size: 14px;
+}
+.body-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 5;
+    content: "";
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    &.active{
+        visibility: visible;
+    }
+}
