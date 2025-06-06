@@ -1,0 +1,53 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use App\Http\Helpers\Api\Helpers;
+use Closure;
+use Illuminate\Auth\Middleware\Authenticate;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\UnauthorizedException;
+
+class ApiAuthenticator extends Authenticate
+{
+    /**
+     * Determine if the user is authenticated and authorized to access the requested resource.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  array  $guards
+     * @return void
+     *
+     * @throws \Illuminate\Auth\AuthenticationException
+     * @throws \Illuminate\Validation\UnauthorizedException
+     */
+    protected function authenticate($request, array $guards)
+    {
+        if ($this->auth->guard('api')->check()) {
+            return $this->auth->shouldUse('api');
+        }
+        throw new UnauthorizedException('sorry');
+    }
+
+    /**
+     * Handle an unauthenticated user.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  array  $guards
+     * @return \Illuminate\Http\JsonResponse
+     *
+     * @throws \Illuminate\Validation\UnauthorizedException
+     */
+    public function handle($request, Closure $next, ...$guards)
+    {
+        try {
+            $this->authenticate($request, $guards);
+        } catch (UnauthorizedException $e) {
+            $message = ['error'=>['Unauthorized user']];
+            return Helpers::unauthorized( $message, $data = null);
+        }
+
+        return $next($request);
+    }
+
+}
